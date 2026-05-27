@@ -35,32 +35,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     // Select all elements that need to fade in
-    const elementsToAnimate = document.querySelectorAll('.fade-in-up, .fade-in-right, .fade-in-left');
+    const elementsToAnimate = document.querySelectorAll('.fade-in-slow, .fade-in-slow-delayed, .fade-in-up');
     
     elementsToAnimate.forEach(el => {
         observer.observe(el);
     });
 
-    // Next-Level Mouse Spotlight on Glass Panels
-    const glassPanels = document.querySelectorAll('.glass-panel, .image-glass-frame, .hero-form-wrapper');
-    
-    document.addEventListener('mousemove', (e) => {
-        glassPanels.forEach(panel => {
-            const rect = panel.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            
-            panel.style.setProperty('--mouse-x', `${x}px`);
-            panel.style.setProperty('--mouse-y', `${y}px`);
-        });
-    });
-
-    // Subtle Parallax on Scroll for Ambient Background
-    const ambientBg = document.querySelector('.ambient-bg');
+    // Subtle Parallax on Scroll for Hero Image
+    const heroImg = document.querySelector('.hero-image');
     window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
-        if(ambientBg) {
-            ambientBg.style.transform = `translateY(${scrolled * 0.15}px) scale(1.05)`;
+        if(heroImg && scrolled < window.innerHeight) {
+            heroImg.style.transform = `translateY(${scrolled * 0.15}px)`;
         }
     });
 });
