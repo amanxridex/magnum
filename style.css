@@ -14,7 +14,7 @@ body, html {
     width: 100%;
     font-family: var(--font-main);
     color: var(--text-white);
-    background-color: #0a0a0a;
+    background-color: transparent;
 }
 
 /* Background */
@@ -22,7 +22,7 @@ body, html {
     position: fixed;
     top: 0; left: 0; width: 100%; height: 100%;
     background: url('images/reception.png') center/cover no-repeat;
-    z-index: -2;
+    z-index: 0;
     transform: scale(1.05); /* Slight zoom for premium feel */
 }
 .bg-overlay {
@@ -30,12 +30,13 @@ body, html {
     top: 0; left: 0; width: 100%; height: 100%;
     /* Gradient to ensure text pops, similar to image */
     background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.6) 100%);
-    z-index: -1;
+    z-index: 1;
 }
 
 /* Layout Wrapper */
 .page-wrapper {
     position: relative;
+    z-index: 2;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -179,6 +180,8 @@ body, html {
 
 /* Content Sections */
 .content-section {
+    position: relative;
+    z-index: 2;
     padding: 100px 50px;
     background: rgba(10, 10, 10, 0.95);
     min-height: 50vh;
