@@ -3,129 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aerocity Estate | Magnum Properties</title>
+    <title>Magnum | Premium Property</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Elegant, understated fonts: Playfair Display for headings, Lato for delicate body/UI -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Inter for that clean, bold, modern look seen in the reference -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Minimalist Navigation -->
-    <nav class="editorial-nav">
-        <div class="nav-brand">Magnum Properties</div>
-        <a href="tel:+919814347079" class="nav-contact">Private Inquiry</a>
-    </nav>
+    <!-- Full-screen Background -->
+    <div class="hero-bg">
+        <div class="bg-overlay"></div>
+    </div>
 
-    <!-- Editorial Hero -->
-    <header class="editorial-hero">
-        <div class="hero-container">
-            <div class="hero-text fade-in-slow">
-                <span class="location-tag">CHANDIGARH AEROCITY</span>
-                <h1 class="main-title">A Masterpiece<br>of Scale &amp; Yield</h1>
-                <p class="sub-title">An extraordinary 21-suite estate, positioned minutes from the International Airport. Designed for unparalleled corporate leasing and hospitality.</p>
+    <div class="page-wrapper">
+        <!-- Floating Pill Navigation -->
+        <header class="top-nav">
+            <div class="nav-pill main-pill fade-in-down">
+                <div class="brand">MAGNUM<i class="fas fa-gem"></i></div>
+                <nav class="menu">
+                    <a href="#" class="active">Home</a>
+                    <a href="#">Details</a>
+                    <a href="#">Featured</a>
+                    <a href="#">Community</a>
+                    <a href="#">Testimonial</a>
+                </nav>
             </div>
-            <div class="hero-image-container fade-in-slow-delayed">
-                <img src="images/hero.png" alt="Aerocity Estate Exterior" class="hero-image">
-            </div>
-        </div>
-    </header>
-
-    <!-- Floating Statistics -->
-    <section class="floating-stats">
-        <div class="stat-row fade-in-up">
-            <div class="stat-block">
-                <span class="stat-val">21</span>
-                <span class="stat-lbl">Luxury Suites</span>
-            </div>
-            <div class="stat-block">
-                <span class="stat-val">9.1k</span>
-                <span class="stat-lbl">Square Feet</span>
-            </div>
-            <div class="stat-block">
-                <span class="stat-val">G+2</span>
-                <span class="stat-lbl">Opulent Levels</span>
-            </div>
-            <div class="stat-block">
-                <span class="stat-val">1</span>
-                <span class="stat-lbl">Kanal Estate</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- The Financial Asset -->
-    <section class="asset-section">
-        <div class="asset-container">
-            <div class="asset-image fade-in-slow">
-                <img src="images/reception.png" alt="Grand Lobby">
-            </div>
-            <div class="asset-text fade-in-up">
-                <h2 class="section-title">An Elite Asset Class</h2>
-                <p class="body-text">Commanding a premier position in Aerocity, this free-hold, two-side open property transcends traditional real estate, offering immediate operational readiness and massive yield potential.</p>
-                
-                <div class="financials">
-                    <div class="fin-line">
-                        <span class="fin-lbl">Annual Rental Potential</span>
-                        <span class="fin-val">₹72,000,000</span>
-                    </div>
-                    <div class="fin-line">
-                        <span class="fin-lbl">Monthly Yield</span>
-                        <span class="fin-val">₹6,00,000</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Architectural Grace -->
-    <section class="architecture-section">
-        <div class="arch-container">
-            <div class="arch-text fade-in-up">
-                <h2 class="section-title">Flawless Execution</h2>
-                <p class="body-text">Every element of this brand-new construction is meticulously planned to cater to high-end guests or executives.</p>
-                
-                <ul class="minimal-list">
-                    <li>Commercial-Grade Culinary Kitchen</li>
-                    <li>Grand Conference &amp; Executive Cabin</li>
-                    <li>Private High-Speed Elevator</li>
-                    <li>Expansive Reception &amp; Lobby Lounge</li>
-                </ul>
-            </div>
-            <div class="arch-image fade-in-slow">
-                <img src="images/conference.png" alt="Executive Facilities">
-            </div>
-        </div>
-    </section>
-
-    <!-- Minimalist Lead Capture -->
-    <section class="inquiry-section" id="inquiry">
-        <div class="inquiry-container fade-in-up">
-            <h2 class="section-title text-center">Acquire the Exceptional</h2>
-            <p class="body-text text-center form-desc">Register your interest to receive the private pricing dossier and floor plans.</p>
             
-            <form class="elegant-form" action="#" method="POST">
-                <div class="form-row">
-                    <input type="text" placeholder="Full Name" required class="elegant-input">
-                    <input type="tel" placeholder="Phone Number" required class="elegant-input">
+            <a href="tel:+919814347079" class="nav-pill contact-pill fade-in-down delay-1">
+                <span>Say "Hello"</span>
+                <div class="icon-circle">
+                    <i class="fas fa-arrow-up-right"></i>
                 </div>
-                <input type="email" placeholder="Email Address" class="elegant-input">
-                <button type="submit" class="btn-elegant">Submit Inquiry</button>
-            </form>
-        </div>
-    </section>
+            </a>
+        </header>
 
-    <!-- Subtle Footer -->
-    <footer class="editorial-footer">
-        <p>Presented exclusively by <strong>Magnum Properties</strong></p>
-        <p class="footer-phone">+91 981434 7079</p>
-    </footer>
+        <!-- Center Content -->
+        <main class="center-content">
+            <div class="floating-paragraphs fade-in-up">
+                <p class="float-left">
+                    Exclusive 21-Suite Kothi<br>
+                    Chandigarh Aerocity
+                </p>
+                <p class="float-right">
+                    Exclusive listings, competitive<br>
+                    prices, and expert guidance–<br>
+                    all in one place.
+                </p>
+            </div>
 
-    <!-- Subtle WhatsApp Integration -->
-    <a href="https://wa.me/919814347079?text=hey%20im%20interested%20i%20your%20property%20near%20aerocty" class="whatsapp-subtle" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-whatsapp"></i> Chat with Concierge
-    </a>
+            <h1 class="massive-title fade-in-up delay-1">
+                Discover your<br>
+                <span class="gradient-text">Perfect property.</span>
+            </h1>
+        </main>
+
+        <!-- Bottom Statistics -->
+        <footer class="bottom-stats fade-in-up delay-2">
+            <div class="stat-item">
+                <h2>21</h2>
+                <p>Luxury Suites</p>
+            </div>
+            <div class="stat-item">
+                <h2>9,100+</h2>
+                <p>Square Feet</p>
+            </div>
+            <div class="stat-item">
+                <h2>₹72M+</h2>
+                <p>Annual Yield Potential</p>
+            </div>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
