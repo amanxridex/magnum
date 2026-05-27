@@ -40,4 +40,27 @@ document.addEventListener('DOMContentLoaded', () => {
     elementsToAnimate.forEach(el => {
         observer.observe(el);
     });
+
+    // Next-Level Mouse Spotlight on Glass Panels
+    const glassPanels = document.querySelectorAll('.glass-panel, .image-glass-frame, .hero-form-wrapper');
+    
+    document.addEventListener('mousemove', (e) => {
+        glassPanels.forEach(panel => {
+            const rect = panel.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            panel.style.setProperty('--mouse-x', `${x}px`);
+            panel.style.setProperty('--mouse-y', `${y}px`);
+        });
+    });
+
+    // Subtle Parallax on Scroll for Ambient Background
+    const ambientBg = document.querySelector('.ambient-bg');
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        if(ambientBg) {
+            ambientBg.style.transform = `translateY(${scrolled * 0.15}px) scale(1.05)`;
+        }
+    });
 });
