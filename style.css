@@ -303,6 +303,11 @@ body, html {
     background: #fff;
     padding: 150px 20px;
     color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .massive-dark-title {
     font-size: clamp(3rem, 6vw, 5rem);
@@ -318,6 +323,7 @@ body, html {
 }
 .contact-pill-dark:hover { background: #000; }
 .contact-pill-dark .icon-circle { background: var(--accent-yellow); color: #000; }
+.text-center { text-align: center; }
 
 /* Animations */
 .fade-in-up { opacity: 0; transform: translateY(30px); animation: fadeUp 1s forwards cubic-bezier(0.2, 0.8, 0.2, 1); }
